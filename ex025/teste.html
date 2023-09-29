@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            width: 250px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Animes que Gosta</legend>
+            <input type="checkbox" name="ken" id="iken">
+            <label for="iken">Kengan Ashura</label><br>
+            <input type="checkbox" name="bak" id="ibak">
+            <label for="ibak">Baki, O Campeão</label><br>
+            <input type="checkbox" name="dem" id="idem">
+            <label for="idem">Demon Slayer</label><br>
+            <input type="checkbox" name="nan" id="inan">
+            <label for="inan">Nanatsu no Taisai</label><br>
+            <input type="checkbox" name="idra" id="idra">
+            <label for="idrag">Dragon Ball</label><br>
+            <input type="checkbox" name="nar" id="inar">
+            <label for="inar">Naruto Shippuden</label><br>
+            <input type="checkbox" name="dr" id="idr">
+            <label for="idr">Dr.Stone</label><br>
+            <input type="checkbox" name="hel" id="ihel">
+            <label for="ihel">Hellsing</label><br>
+            <input type="checkbox" name="cas" id="icas">
+            <label for="icas">Castlevania</label><br>
+            <input type="checkbox" name="ber" id="iber">
+            <label for="iber">Berserk</label>
+        </fieldset>
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required placeholder="Nome Completo">
+        </p>
+        <p>
+            <label for="iidade">Idade: </label>
+            <input type="number" name="idade" id="iidade" required placeholder="8 a 90">
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
